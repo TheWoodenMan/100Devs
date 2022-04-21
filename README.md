@@ -8,7 +8,7 @@
 
 |               Skill              | 1<br>Content      | 2<br>Progress          | 3<br>Homework    |
 |:-------------------------------- |:-----------------:|:----------------------:|:----------------:|
-|**Class 1**                       | Learning & study  | ![done][done]          |                  |
+|**Class 1**                       | Learning & study  | ![done][done]          | ![done][done]    |
 |**Class 2**                       | HTML & CSS        |                        |                  |
 
 
