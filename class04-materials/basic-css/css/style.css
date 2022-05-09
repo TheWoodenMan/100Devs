@@ -1,0 +1,29 @@
+h1 {
+  color: blue;
+  background-color: gold;
+  text-decoration: underline;
+}
+
+h2 {
+  color: purple;
+  border: 5px solid orange;
+  font-weight: 600;
+}
+
+p {
+  width: 50%;
+  height: 200px;
+  background-color: gray;
+  font-weight: 700;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  border: 5px solid black;
+  color: white;
+}
+footer {
+  background-color: black;
+  color: white;
+  border: 5px solid lightgreen;
+  font-size: 20px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
