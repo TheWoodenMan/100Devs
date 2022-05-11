@@ -46,3 +46,13 @@ footer {
   width: 100%;
   height: 200px;
 }
+
+@media all and (max-width: 420px) {
+  section,
+  aside,
+  .top,
+  .bottom {
+    float: none;
+    width: auto;
+  }
+}

@@ -36,3 +36,11 @@ footer {
   clear: both;
   height: 200px;
 }
+
+@media all and (max-width: 420px) {
+  section,
+  div {
+    float: none;
+    width: auto;
+  }
+}

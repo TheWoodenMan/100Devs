@@ -6,21 +6,25 @@
 
 html,
 body {
-  width: 100%;
+  width: 100vw;
   margin: 0;
 }
 
 header {
   height: 200px;
+  width: 100vw;
 }
 
 footer {
   height: 200px;
+  width: 100vw;
   clear: both;
+  bottom: 0;
 }
 
 div {
   height: 600px;
+  width: 100vw;
 }
 
 nav {
@@ -31,7 +35,7 @@ nav {
 
 article {
   height: 100%;
-  width: 40%;
+  width: 20%;
   float: left;
 }
 
@@ -39,4 +43,20 @@ aside {
   height: 100%;
   width: 20%;
   float: left;
+}
+
+section {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+@media all and (max-width: 420px) {
+  nav,
+  article,
+  aside,
+  section {
+    float: none;
+    width: auto;
+  }
 }
