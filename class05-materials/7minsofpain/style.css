@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border: red 1px solid;
+  height: 100vh;
+  display: block;
+  text-align: center;
+}
+
+header,
+footer {
+  height: 100px;
+  width: 100%;
+  border: black 1px solid;
+  clear: both;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+}
+
+section {
+  width: 33.333%;
+  border: black 1px solid;
+  height: 700px;
+  float: left;
+}

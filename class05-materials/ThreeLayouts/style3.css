@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px black solid;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  height: 200px;
+}
+
+footer {
+  height: 200px;
+  clear: both;
+}
+
+div {
+  height: 600px;
+}
+
+nav {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+article {
+  height: 100%;
+  width: 40%;
+  float: left;
+}
+
+aside {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
