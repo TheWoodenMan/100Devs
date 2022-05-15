@@ -9,8 +9,8 @@
 |               Skill              | 1<br>Content      | 2<br>Video             | 3<br>Homework    |
 |:-------------------------------- |:-----------------:|:----------------------:|:----------------:|
 |**Class 1**                       | Learning & study  | ![done][done]          | ![done][done]    |
-|**Class 2**                       | HTML & CSS        | ![done][done]          | ![done][done]    |
-|**Class 3**                       | HTML & CSS        | ![done][done]          | ![done][done]    |
-|**Class 4**                       | HTML & CSS        | ![done][done]          | ![done][done]    |
-|**Class 5**                       | HTML & CSS        | ![done][done]          | ![done][done]    |
-|**Class 6**                       | HTML & CSS        | ![done][done]          | ![done][done]    |
+|**Class 2**                       | Learn HTML        | ![done][done]          | ![done][done]    |
+|**Class 3**                       | Learn More HTML   | ![done][done]          | ![done][done]    |
+|**Class 4**                       | Learn CSS         | ![done][done]          | ![done][done]    |
+|**Class 5**                       | Learn CSS Layout  | ![done][done]          | ![done][done]    |
+|**Class 6**                       | Review HTML & CSS | ![done][done]          | ![done][done]    |
