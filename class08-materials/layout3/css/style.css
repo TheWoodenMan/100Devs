@@ -1,0 +1,136 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  color: white;
+}
+
+p,
+h1,
+h2,
+h3,
+span {
+  width: 90%;
+  padding: 5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 55px;
+  background: black;
+  color: white;
+}
+
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+
+nav > a {
+  padding: 1% 2%;
+}
+
+nav ul {
+  width: 50%;
+}
+
+nav form input {
+  width: 100%;
+}
+
+section + section {
+  float: left;
+  width: 33%;
+}
+
+main > h2 {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+
+.date {
+  float: right;
+  color: gray;
+  text-align: right;
+}
+
+main > section {
+  float: left;
+  width: 50%;
+  height: 70vh;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+main section + section section {
+  width: 50%;
+  height: 35vh;
+  float: left;
+  border: 1px black solid;
+}
+
+body > main > h2 + section {
+  background-image: url(/class08-materials/layout3/groudon.jpeg);
+  background-size: cover;
+}
+
+main > h2 {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.machamp {
+  background-image: url(/class08-materials/layout3/machamp.jpeg);
+  background-size: cover;
+}
+
+.pokerus {
+  background-image: url(/class08-materials/layout3/pokerus.webp);
+  background-size: cover;
+}
+
+.jiggly {
+  background-image: url(/class08-materials/layout3/jiggly.jpeg);
+  background-size: cover;
+}
+
+.johto {
+  background-image: url(/class08-materials/layout3/johto.jpeg);
+  background-size: cover;
+}
+
+@media (max-width: 1600px) {
+}
