@@ -48,6 +48,9 @@ h2 {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* Header & Nav */
+
 header {
   height: 5vh;
   background: black;
@@ -79,11 +82,15 @@ nav img {
 nav form {
   vertical-align: middle;
   line-height: 5vh;
+  float: right;
+  margin: 0 3em 0 0;
 }
 
 nav form input {
   width: 100%;
 }
+
+/* Welcome & Date */
 
 main > h2 {
   float: left;
@@ -95,16 +102,32 @@ main > h2 {
 .date {
   float: right;
   color: gray;
+  width: auto;
+  height: 5vh;
   text-align: right;
 }
+
+/* Main Box Positioning */
 
 main > figure,
 main > section {
   float: left;
   height: 90vh;
-  padding: 5%;
+}
+
+body > main > section {
+  padding: 1%;
   margin: 1%;
-  width: 90%;
+  float: left;
+  width: 46%;
+}
+
+body > main > figure {
+  background-image: url(/class08-materials/layout3/groudon.jpeg);
+  margin: 1%;
+  padding: 1%;
+  width: 46%;
+  background-size: cover;
 }
 
 main section section {
@@ -114,11 +137,15 @@ main section section {
 }
 
 aside {
-  width: 90%;
+  width: 96%;
   float: left;
-  padding: 5% 0;
-  margin: 5%;
+  padding: 1% 0;
+  margin: 1%;
+  text-shadow: none;
+  font-family: Arial, Helvetica, sans-serif "Lucida Sans", Arial, sans-serif;
 }
+
+/* Content Positioning */
 
 aside > section {
   width: 33%;
@@ -127,29 +154,13 @@ aside > section {
   color: #000;
 }
 
-body > main > figure {
-  background-image: url(/class08-materials/layout3/groudon.jpeg);
-  margin: 5%;
-  width: 90%;
-  background-size: cover;
-}
-
-main > h2 {
-  padding: 0.25em;
-  margin: 0.25em;
-}
-
-form {
-  float: right;
-  margin: 0 3em 0 0;
-}
-
 /******************************************
 /* MODULES
 /*******************************************/
+
+/* Content Boxes  - Section */
 .machamp {
   background-image: url(/class08-materials/layout3/machamp.jpeg);
-  padding: 1em;
   background-size: cover;
 }
 
@@ -168,6 +179,8 @@ form {
   background-size: cover;
 }
 
+/* Content Boxes - Aside */
+
 .pikastudy {
   width: 100%;
   height: auto;
@@ -176,20 +189,89 @@ form {
 /******************************************
 /* ALTERNATE STYLES
 /*******************************************/
-/* 
-@media (max-width: 1400px) {
-  ul {
-    display: none;
+
+@media (min-width: 1281px) and (max-width: 1921px) {
+  body > main > figure {
+    width: 96%;
   }
-  main > h2 {
-    padding: 0.25em 5%;
-    margin: 0;
+  body > main > section {
+    width: 96%;
+  }
+  body > main > section > section {
+    width: 50%;
+    background-image: contain;
+  }
+
+  body > main > aside {
+    width: 100%;
+  }
+  aside section {
+    width: 30%;
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body > main > figure {
+    width: 96%;
+    height: 40vh;
+  }
+  body > main > section {
+    width: 96%;
+  }
+  body > main > section > section {
+    width: 50%;
+  }
 
-*/
+  nav > ul {
+    display: none;
+  }
 
+  body > main > aside {
+    width: 100%;
+  }
+  aside section {
+    width: 96%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body > main > figure {
+    width: 96%;
+    float: left;
+    height: 40vh;
+  }
+  body > main > section {
+    width: 96%;
+    float: left;
+  }
+  body > main > section > section {
+    width: 96%;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  body > main > aside {
+    width: 96%;
+  }
+  aside section {
+    width: 96%;
+  }
+}
+@media (max-width: 640px) {
+  body > main > section > section {
+    width: 96%;
+    height: 35vh;
+  }
+  .bbc {
+    display: none;
+  }
+  .date {
+    width: 96%;
+    text-align: center;
+  }
+}
 /******************************************
 /* THEMES
 /*******************************************/
