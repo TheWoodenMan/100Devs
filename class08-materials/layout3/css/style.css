@@ -139,7 +139,7 @@ main section section {
 aside {
   width: 96%;
   float: left;
-  padding: 1% 0;
+  padding: 1%;
   margin: 1%;
   text-shadow: none;
   font-family: Arial, Helvetica, sans-serif "Lucida Sans", Arial, sans-serif;
@@ -148,7 +148,7 @@ aside {
 /* Content Positioning */
 
 aside > section {
-  width: 33%;
+  width: 33.3%;
   float: left;
   padding: 1em;
   color: #000;
@@ -206,7 +206,7 @@ aside > section {
     width: 100%;
   }
   aside section {
-    width: 30%;
+    width: 33%;
   }
 }
 
@@ -227,10 +227,10 @@ aside > section {
   }
 
   body > main > aside {
-    width: 100%;
+    width: 96%;
   }
   aside section {
-    width: 96%;
+    width: 100%;
   }
 }
 
@@ -242,10 +242,13 @@ aside > section {
   }
   body > main > section {
     width: 96%;
-    float: left;
+    display: block;
+    clear: both;
+    overflow-wrap: normal;
+    height: 180vh;
   }
   body > main > section > section {
-    width: 96%;
+    width: 100%;
   }
 
   nav > ul {
@@ -254,6 +257,8 @@ aside > section {
 
   body > main > aside {
     width: 96%;
+    display: block;
+    clear: both;
   }
   aside section {
     width: 96%;
