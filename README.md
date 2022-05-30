@@ -14,3 +14,5 @@
 |**Class 4**                       | Learn CSS         | ![done][done]          | ![done][done]    |
 |**Class 5**                       | Learn CSS Layout  | ![done][done]          | ![done][done]    |
 |**Class 6**                       | Review HTML & CSS | ![done][done]          | ![done][done]    |
+|**Class 7**                       | Responsive CSS    | ![done][done]          | ![done][done]    |
+|**Class 8**                       | Layouts/Media Qs  | ![done][done]          | ![done][done]    |
