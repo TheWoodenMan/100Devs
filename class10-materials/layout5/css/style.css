@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0 auto;
+  border: red solid 1px;
 }
 
 /* Clear fix hack */
@@ -21,14 +23,84 @@
 /* BASE STYLES
 /*******************************************/
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* Header */
+
 header {
+  width: 100%;
+  height: 10vh;
 }
+
+header > .source {
+  width: 20%;
+  float: left;
+}
+
+nav {
+  width: 50%;
+  float: left;
+}
+
+header > .button {
+  width: 25%;
+  float: right;
+}
+
+nav > ul > a {
+  float: left;
+  width: 25%;
+  height: 10vh;
+}
+
+/*  Main Section */
+
+.main-section {
+  height: 45vh;
+  width: 100%;
+}
+
+.intro {
+  width: 50%;
+  float: left;
+}
+
+.desktop-pic {
+  width: 50%;
+  float: left;
+  height: 45vh;
+  background-image: url(/class10-materials/layout5/images/laptop-phone.png);
+  object-fit: cover;
+}
+
+.feature {
+  width: 25%;
+  float: left;
+  height: 45vh;
+}
+
+.info {
+  height: 100vh;
+}
+
+/* Footer */
 
 footer {
 }
