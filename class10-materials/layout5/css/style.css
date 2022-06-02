@@ -29,13 +29,23 @@ html {
 
 a:link {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
   list-style: none;
 }
 
-body {
+header,
+.intro,
+.features {
+  background-color: #f5f9fc;
+  color: #34485a;
+}
+
+.features {
+  background-color: #f5f9fc;
+  color: #34485a;
 }
 
 /******************************************
@@ -50,8 +60,9 @@ header {
 }
 
 header > .source {
-  width: 20%;
+  width: 25%;
   float: left;
+  padding: 1.8%;
 }
 
 nav {
@@ -68,36 +79,91 @@ nav > ul > a {
   float: left;
   width: 25%;
   height: 10vh;
+  padding: 3%;
+}
+
+header > .source {
+  width: 75%;
+}
+
+header > a {
+  padding: 30% 10% 10% 10%;
+  padding: 6em 10%;
+}
+
+.fa-list-tree {
+  float: left;
+  width: 25%;
+}
+
+header > span {
+  float: left;
+  width: 25%;
+  padding: 3em;
 }
 
 /*  Main Section */
 
 .main-section {
-  height: 45vh;
+  height: 90vh;
   width: 100%;
 }
 
 .intro {
   width: 50%;
   float: left;
+  height: 65vh;
+  padding: 10%;
 }
 
 .desktop-pic {
   width: 50%;
   float: left;
-  height: 45vh;
-  background-image: url(/class10-materials/layout5/images/laptop-phone.png);
-  object-fit: cover;
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.desktop-pic > img {
+  width: 100%;
+  height: 65vh;
+  object-fit: contain;
+  position: absolute;
+}
+
+form,
+input {
+  width: 50%;
+  float: left;
+}
+
+.features {
+  width: 100%;
+  float: left;
+  height: 25vh;
 }
 
 .feature {
   width: 25%;
   float: left;
-  height: 45vh;
+  padding: 0.5% 1% 1% 1%;
+}
+
+i,
+h3,
+p {
+  padding: 1%;
 }
 
 .info {
   height: 100vh;
+  clear: both;
+  padding: 10%;
+}
+
+.info > section > img {
+  padding: 10% 10% 10% 30%;
+  height: 70vh;
 }
 
 /* Footer */
@@ -108,3 +174,96 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 1920px) {
+  .desktop-pic > img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+  }
+
+  .info > section > img {
+    padding: 10% 10% 10% 20%;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .info > section > img {
+    padding: 10% 10% 10% 10%;
+    height: auto;
+    width: 100%;
+  }
+
+  .intro,
+  .info {
+    padding: 20% 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  header > a {
+    width: 50%;
+    float: right;
+    padding: 3em 7em;
+  }
+
+  header > .source {
+    padding: 3em 7em;
+    width: 50%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .intro,
+  .desktop-pic {
+    width: 100%;
+  }
+
+  .features {
+    height: 35vh;
+  }
+
+  .feature {
+    width: 50%;
+  }
+
+  .intro,
+  .info {
+    padding: 40% 10%;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro,
+  .info {
+    padding: 40% 10%;
+  }
+
+  nav {
+    display: none;
+  }
+  header > span,
+  header > .button {
+    width: 50%;
+  }
+
+  header > span {
+    float: left;
+  }
+
+  header > .button {
+    float: right;
+  }
+
+  .features {
+    height: 70vh;
+  }
+
+  .feature {
+    width: 100%;
+  }
+}
