@@ -1,0 +1,112 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  background-color: #87cdeb;
+  color: #ededed;
+  font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+     /* BASE STYLES
+     /*******************************************/
+
+#twitch {
+  border-left: 1px black solid;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 4rem;
+}
+
+header > h1 + span,
+#twitch {
+  border-right: 1px black solid;
+  padding: 0 2%;
+}
+
+header > span + span,
+footer > span {
+  color: #4acc35;
+  text-decoration: underline;
+}
+
+span,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 3rem;
+}
+
+/******************************************
+     /* LAYOUT
+     /*******************************************/
+header {
+  text-align: center;
+}
+
+aside {
+  width: 40%;
+  float: right;
+  overflow: clip;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  float: left;
+  padding: 2%;
+}
+
+section {
+  height: 90vh;
+  float: left;
+  width: 30%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.main-panel {
+  border: 5px solid #4acc35;
+}
+
+section > p {
+  width: 60%;
+  float: left;
+  font-size: 2.5rem;
+  display: inline;
+}
+
+.full-para {
+  text-align: justify;
+  width: 100%;
+}
+
+/******************************************
+     /* ADDITIONAL STYLES
+     /*******************************************/
