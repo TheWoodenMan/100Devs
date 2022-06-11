@@ -1,7 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
-  border: 1px red transparent;
+  border: 1px transparent solid;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
@@ -49,6 +49,9 @@ h6 {
 p,
 span {
   font-size: 2rem;
+  padding: 2%;
+  margin: 5% 0 0 0;
+  text-align: center;
 }
 
 a:link,
@@ -148,6 +151,11 @@ span > a {
   background-color: #f3f5f6;
 }
 
+.discover-menu {
+  float: right;
+  width: 50%;
+}
+
 .discover-menu > a {
   background-color: #ff8700;
   color: #f3f5f6;
@@ -231,12 +239,12 @@ nav > section > a > i {
 .about-us {
   background-image: url(/images/foodpart1.png);
   height: 100vh;
-  padding: 20% 20% 20% 50%;
+  padding: 15% 15% 10% 40%;
 }
 .about-us > p {
   width: 100%;
   margin: 5% 0%;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 input {
@@ -246,9 +254,13 @@ input {
 }
 
 .socials {
-  width: 100%;
+  width: 60%;
   float: left;
   padding: 5% 0;
+}
+
+.text-box {
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
 /******* DISCOVER MENU *******/
@@ -263,11 +275,12 @@ input {
 }
 
 .discover-menu > a {
-  padding: 2% 0 2% 2%;
+  padding: 2% 0% 2% 2%;
 }
 
 .discover-menu > a > i {
-  padding: 4.5% 5%;
+  width: 15;
+  padding: 3.5%;
 }
 
 /******* ORDER ONLINE *******/
@@ -302,6 +315,7 @@ input {
 
 .food-gallery {
   display: flex;
+  width: 100%;
   flex-flow: wrap;
 }
 
@@ -324,8 +338,9 @@ input {
 .book-table,
 .testimonials {
   text-align: center;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
+  float: left;
 }
 
 .book-table > section {
@@ -346,7 +361,7 @@ input {
 
 .video-container > section {
   height: 100%;
-  flex: 0 0 50%;
+  flex: 3 0 60%;
 }
 
 iframe {
@@ -356,15 +371,15 @@ iframe {
 
 .video-container > a {
   height: 60vh;
-  width: 100%;
-  flex: 0 0 25%;
+  width: 20%;
+  flex: 0 3 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .video-arrow > i {
-  padding: 20rem;
+  padding: 5%;
   font-size: 10rem;
   opacity: 50%;
 }
@@ -411,6 +426,11 @@ iframe {
     padding: 1vh 5% 1vh 5%;
     margin: 3vh;
   }
+
+  .micro-heading {
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+      0.5px 0.5px 0 #000;
+  }
 }
 
 @media all and (max-width: 1280px) {
@@ -456,10 +476,18 @@ iframe {
     padding: 25%;
   }
 
+  .socials > a {
+    width: 100%;
+  }
+
   .search-bar {
     width: 100%;
     text-align: left;
     font-size: 5rem;
+  }
+
+  .fa-2xl {
+    font-size: 1em;
   }
 }
 
@@ -475,9 +503,23 @@ iframe {
     margin: 0;
   }
   .socials > a {
-    width: 100%;
+    width: 80%;
     float: left;
     margin: 0 0 5% 0;
+  }
+
+  .food-pic {
+    width: 50%;
+    padding: 2.5%;
+    height: 37.5vh;
+    object-fit: cover;
+  }
+  .food-gallery > a {
+    width: 50%;
+  }
+
+  .fa-2xl {
+    font-size: 0.6em;
   }
 }
 
