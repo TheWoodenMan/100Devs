@@ -1,16 +1,17 @@
-document.querySelector("#check").addEventListener("click", check);
+document.querySelector("#check").addEventListener("click", run);
 
-function check() {
-  const day = document.querySelector("#day").value;
+function run() {
+  const day = document.querySelector("#day").value.toLowerCase();
+  const place = document.querySelector("#placeToSee");
 
-  if (day === "sunday" || day === "saturday") {
-    document.querySelector("#placeToSee").innerHTML = "It's the Weekend";
-  } else if (day === "tuesday" || day === "thursday") {
-    document.querySelector("#placeToSee").innerHTML = "It's a class day";
+  if (day === "saturday" || day === "sunday") {
+    place.innerHTML = "It's the weekend";
   } else if (day === "monday" || day === "wednesday" || day === "friday") {
-    document.querySelector("#placeToSee").innerHTML = "It's a boring day";
+    place.innerHTML = "It's a boring day";
+  } else if (day === "tuesday" || day === "thursday") {
+    place.innerHTML = "It's a class day";
   } else {
-    document.querySelector("#placeToSee").innerHTML = "That's not a day fam!";
+    place.innerHTML = "It's not a day fam";
   }
 }
 

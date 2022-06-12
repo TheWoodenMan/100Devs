@@ -1,5 +1,3 @@
-"use strict";
-
 /** 
  * javascript.info - Variables
  * https://javascript.info/variables
@@ -175,14 +173,32 @@ pow(3, 3) = 3 * 3 * 3 = 27
 pow(1, 100) = 1 * 1 * ...* 1 = 1
 */
 
-function calcPower(x, n) {
-  return x > 0 ? x ** n : console.log("Choose a valid integer");
-}
-
-console.log(calcPower(3, 3));
 /*
 Create a web-page that prompts for x and n, and then
  shows the result of pow(x,n).
+
+*/
+
+document.querySelector("#submitCalc").addEventListener("click", setPower);
+
+function setPower() {
+  let num = document.querySelector("#getNum").value;
+  let power = document.querySelector("#getPower").value;
+
+  let powerOutput = calcPower(num, power);
+
+  function calcPower(x, n) {
+    return x < 1 ? console.log("Choose a valid integer") : x ** n;
+  }
+
+  document.querySelector(
+    "#output"
+  ).innerHTML = ` ${num} to the power of ${power} is: ${powerOutput}`;
+}
+
+/*
+
+
 
 Run the demo
 
