@@ -114,7 +114,7 @@ h5 {
   font-size: 1.6rem;
   width: 25%;
   padding: 2%;
-  height: 35vh;
+  height: 25 vh;
 }
 
 .first-visit > section > a {
@@ -192,6 +192,23 @@ footer {
   object-fit: contain;
   background-repeat: no-repeat;
   background-image: url(/images/photo-1470259078422-826894b933aa.jpg);
+}
+
+.full-width-flex {
+  display: flex;
+}
+
+#title-h1 {
+  font-size: 4rem;
+  margin: 0.67rem 0 0.67rem 0.67rem;
+}
+
+#title-filler {
+  flex-basis: 60%;
+}
+
+#title-times {
+  height: 1.6rem;
 }
 
 .portrait-gallery {
