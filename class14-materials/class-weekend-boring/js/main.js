@@ -1,6 +1,6 @@
 //Handle Capital Letters, Place result in DOM, add a check for humpday (Wed)
 
-document.querySelector("#check").addEventListener("click", dayCheck);
+document.querySelector("#check").addEventListener("click", daySwitch);
 
 function dayCheck() {
   console.log("testing");
@@ -16,6 +16,33 @@ function dayCheck() {
     placeToSee.innerHTML = "It's a boring day";
   } else {
     placeToSee.innerHTML = "That's not a day dude!";
+  }
+}
+
+function daySwitch() {
+  let day = document.querySelector("#placeToCheck").value;
+  day = day.toLowerCase();
+  let placeToSee = document.querySelector("#placeToSee");
+
+  switch (day) {
+    case "saturday":
+    case "sunday":
+      placeToSee.innerHTML = "It's the weekend!";
+      break;
+
+    case "monday":
+    case "wednesday":
+    case "friday":
+      placeToSee.innerHTML = "it's a boring day";
+      break;
+
+    case "tuesday":
+    case "thursday":
+      placeToSee.innerHTML = "it's a class day";
+      break;
+
+    default:
+      placeToSee.innerHTML = "That's not a day fam.";
   }
 }
 
