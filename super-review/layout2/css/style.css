@@ -1,20 +1,21 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,9 +23,27 @@
 /*******************************************/
 
 body {
-
 }
 
+header,
+footer {
+  height: 15vh;
+}
+
+.topContainer,
+.bottomContainer {
+  display: flex;
+}
+
+section {
+  flex: 1;
+  height: 30vh;
+}
+
+aside {
+  flex: 0.33;
+  height: 30vh;
+}
 
 /******************************************
 /* LAYOUT
