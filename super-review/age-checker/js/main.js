@@ -6,8 +6,33 @@
 //If under 30, tell them they can not rent fancy cars affordably
 //If under over 30, tell them there is nothing left to look forward too
 
+let age = 0;
+let output;
+
+function ageCheck() {
+  age = document.querySelector("input").value;
+
+  if (age < 16) {
+    output = `You're ${age}, you can't drive`;
+  } else if (age < 18) {
+    output = `You're ${age}, you can't hate from outside the club, because you can't even get in`;
+  } else if (age < 21) {
+    output = `You're ${age}, you can't drink`;
+  } else if (age < 25) {
+    output = `You're ${age}, you can't rent cars affordably`;
+  } else if (age < 30) {
+    output = `You're ${age}, you can't rent fancy cars affordably`;
+  } else if (age >= 30) {
+    output = `You're ${age}, there is nothing left to look forward to other than 100 Devs`;
+  }
+  document.querySelector("p").innerHTML = output;
+}
 
 //--- Harder
 //On click of the h1
+
+document.querySelector("h1").addEventListener("click", ageCheck);
+
 //Take the value from the input
+
 //Place the result of the conditional in the paragraph
